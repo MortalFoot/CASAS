@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons start>
+      </ion-buttons>
+      <ion-title>Bienes raices</ion-title>
+      <ion-buttons end>
+        <button (click)= "clickCarrito()"ion-button icon-only color="royal">
+          <ion-icon name="md-cart"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Bienes Raíces
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+  
+  
+
+    
+
+    
+  
+    <ion-content padding  style = "background-color: dimgray">
+        <ion-card style = "border-radius: 10ptx" *ngFor="let u of FotoCasa">
+            <ion-item>
+              <ion-col item-start>
+                <img [src] = u.foto  (click)="clickIMA(u)"/>
+              </ion-col>
+              <h2> {{u.Nombre}} </h2>
+              <p> {{u.Precio}} </p>
+            </ion-item>
+        </ion-card>
+
+
+
+
+  
+
+
+
+      
+  </ion-content>
+
